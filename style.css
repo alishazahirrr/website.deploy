@@ -1,0 +1,2445 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #fff;
+      overflow-x: hidden;
+      color: #333;
+      line-height: 1.6;
+    }
+
+/* ✅ Preserve structure, border, padding */
+.custom-navbar {
+  background-color: white;
+  padding: 20px 300px;
+  border: 2px solid #444;
+  border-radius: 20px;
+  margin: 50px 150px 20px;
+}
+
+/* ✅ Navbar links styling */
+.navbar-nav .nav-link {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #38bd3b;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #38bd3b;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+    /* Hero Section */
+    .hero-section {
+      padding: 30px 0;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .line1,
+    .line2,
+    .line3,
+    .line4 {
+      font-weight: 800; /* Extra bold */
+      color: black;
+      margin: 0;
+      padding: 0;
+      line-height: 1.1;
+    }
+
+    .line1 {
+      font-size: 3.5rem;
+    }
+
+    .line2 {
+      font-size: 3.5rem;
+      margin-top: 5px;
+    }
+
+    .line3 {
+      font-size: 1.6rem;
+      color: #38bd3b;
+      margin-top: 0px;
+      font-weight: 700;
+      margin-left: 100px;
+    }
+
+    .line4 {
+      font-size: 3.5rem;
+      color: #38bd3b;
+      margin-top: -15px;
+      
+    }
+
+    .line5 {
+      margin-top: 25px;
+      font-size: 1.2rem;
+      line-height: 1.2;
+      max-width: 90%;
+      color: black;
+    }
+
+    .button1 {
+    
+      margin-top: 1opx;
+      background-color: #38bd3b;
+      color: white;
+      border: none;
+      border-radius: 22px;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 12px 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 160px;
+      box-shadow: 0 4px 10px rgba(56, 189, 59, 0.3);
+
+    }
+
+    .button1:hover {
+      background-color: #2da32f;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(56, 189, 59, 0.4);
+    }
+
+    .growvy-img {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      height: 100%;
+      padding: 10px;
+    }
+
+    .growvy-img img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+    .growvy-img img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Paragraph Section */
+    .paragraph-section {
+      padding: 50px 0 30px;
+    }
+
+    .paragraph1 {
+      color: black;
+      font-size: 1.3rem;
+      line-height: 1.0;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      padding: 0 20px;
+     padding-top: 35px;
+     padding-bottom: 40px;
+    }
+
+    .paragraph1::before {
+     
+      font-size: 4rem;
+      color: #38bd3b;
+      position: absolute;
+      left: -10px;
+      top: -20px;
+      font-family: Georgia, serif;
+    }
+    .line6,.line7{
+      padding: 0;
+      margin: 0;
+      padding-left: 83px;
+      color: black;
+       padding: 0;
+      margin: 0;
+      padding-left: 91px;
+
+    }
+    .line6{
+      font-size: 2.9rem;
+      font-weight: bold;
+      
+        
+      }
+      .ecommerce_heading,.ecom_content{
+     padding: 0;
+      margin: 0;
+      color: black;
+      padding: 0;
+      margin: 0;
+      padding: 0;
+      margin: 0;
+      padding-left: 91px;
+
+
+      }
+
+      .ecommerce_heading{
+       
+         font-size: 2.9rem;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+      padding-top: 200px;
+      padding-left: 25px;
+      }
+      .emp_heading,.emp_content{
+        padding: 0;
+      margin: 0;
+     
+      color: black;
+
+      }
+      .emp_heading{
+          font-size: 2.9rem;
+      font-weight: bold;
+      padding-top: 60px;
+      }
+    
+      
+
+    .buss_heading,.buss_content{
+      padding: 0;
+      margin: 0;
+      color: black;
+    }   
+    .buss_heading{
+        font-size: 2.9rem;
+      font-weight: bold;
+      padding-top: 50px;
+    }
+    .e-com_button,.emp_button ,.buss_button,.job_button ,.plan-button,.SignInButton ,.scheduleCallButton ,.planBtn,.PricingBtn,.startbtn ,.signinBtn,.applynowbtn ,.job_button2  ,.planbtn,.starttoda,
+.signinBtn2 ,.starttoday{
+    
+    background-color: #38bd3b;  /* Your preferred green */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+ 
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+ margin-bottom: 50px;    
+}
+ .job_button{
+ 
+  margin: 0;
+  margin-left: 92px;
+  margin-bottom: 100px;    
+   margin-top: 15px;
+   }
+.e-com_button{
+  margin: 0;
+  margin-left: 92px;
+  margin-bottom: 100px;
+  margin-top: 15px;
+
+}
+
+
+.ecom_img {
+  margin-left: 124px;
+}
+
+ 
+.emp_button{
+  margin: 0;
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 70px;
+}
+.buss_button{
+  margin-top: 15px;
+  margin-left: 10px;
+}
+    .jobSeekerimg{
+      padding: 0;
+      margin: 0;
+     
+    }
+    .red_flagImg,.e_commImg{
+      padding-left: 200px;
+    }
+.text1,.text2{
+  display: flex;
+  justify-content: center;
+  line-height: 1.5;
+}
+.text1{
+  padding: 0;
+  margin: 0;
+  padding-top: 120px;
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+}
+.text2{
+  font-size: 20px;
+  color: blank
+  ;
+}
+.SignInButton{
+  margin-left: 550px;
+   margin-top: 25px;}
+
+.arrowpic{
+  display: flex;
+  justify-content: center;
+  padding-top: 65px;
+  padding-bottom: 50px;
+}
+.text3,.text4{
+  padding-left: 91px;
+}
+.text3{
+  font-size: 70px;
+  color: black;
+  font-weight: 500;
+  line-height: 1.2;
+  padding-top: 95px;
+
+}
+.plan-button{
+  margin-left: 95px ;
+  margin-top: 25px;
+}
+.text4{
+  color: black;
+   font-size: 25px;
+   line-height: 1.2;
+   font-weight: 400;
+}
+.ownerpic{
+  padding: 0;
+  margin: 0;
+  width: 500px;
+  height: 500px;
+}
+.text5{
+   
+   font-size: 25px;
+  padding: 0;
+  margin: 0;
+ font-weight: 500;
+}
+.scheduleCallButton
+{padding: 10px 10px;
+ margin: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  width: 250px;
+}.scheduleCallpic{
+  padding-top: 85px;
+  padding-left: 91px;
+}
+.text6,.text7{
+  padding: 0;
+  margin: 0;
+  padding-left: 91px;
+ color: black;
+
+}
+.text6{
+   padding-top: 100px;
+   font-size: 65px;
+   font-weight: 700;
+
+}
+.text7{
+  font-size: 21px;
+  font-weight: 400;
+line-height: 1.2;
+}
+.icons{
+  width: 79px;
+  height: 57px;
+  
+  display: flex;
+  padding-left: 90px;
+  margin-top: 15px;
+   gap: 15px;
+  
+}
+.list{
+  padding: 0;
+  margin: 0;
+  font-size: 19px;
+  font-weight: 600;
+  padding-left: 175px;
+  padding-top: 160px;
+  
+}
+.starsLine{
+  padding: 0;
+  margin: 0;
+padding-left: 150px;
+  padding-top: 15px;
+  width: 300px;
+  height: 40px;
+}
+.greenarrow{
+ 
+padding: 0;
+margin: 0;
+width: 250px;
+height: 250px;
+margin-left: 80px;
+margin-top: 150px;
+
+}
+.service_div {
+ background-color: #DFF5E3;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+ padding: 0;
+}
+.text8,.text13{
+  font-size: 70px;
+  font-weight: 700;
+
+}
+.text9,.text10{
+  font-size: 20px;
+  font-weight: 500; 
+}
+.div1 {
+    height: 275px;
+  width: 275px;
+  display: flex;
+  flex-direction: column;        
+  justify-content: center;       
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 25px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0 auto;  /* ✅ New */
+}
+
+.overlapImg{
+  position: absolute;
+  top: 1px; 
+  left: 50%;   /* ✅ Changed */
+  transform: translateX(-50%);
+  width: 80px; 
+  height: auto;
+}
+.text11{
+  font-weight: 700;
+  font-size: 21px;
+}
+.text12{
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.overlapdiv {
+  position: relative;
+  padding-top: 50px;
+  padding-left: 25px;  /* ✅ New */
+  padding-right: 25px;} /* ✅ New */
+.div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;     /* vertical center */
+  align-items: center;         /* ✅ horizontal center */
+}
+.text14,.text16{
+  margin: 0;
+  font-size: 60px;
+  height: 200px;
+  width: 400px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-right: 150px;
+  margin-top: 70px;
+}
+.text15,.text17{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+   height: 200px;
+    width: 400px;
+
+}
+.text16,.text17{
+  padding: 0;
+  margin: 0;
+  
+}
+.text16{
+ padding-top: 47px;
+  padding-bottom: 0;
+margin-bottom: 0;
+line-height: 1.2;}
+.text15{
+padding-top: 0;
+  margin-top: 0;}
+.text17{
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.text14, .text16,
+.text15, .text17 {
+  height: auto;
+}
+
+.text14{
+  padding-bottom: 0;
+margin-bottom: 0;
+}
+
+.startbtn {
+  margin-top: 10px;
+  
+}
+.divSix{
+  border: 2.5px solid black;
+  border-radius: 18px;
+  width: 300px;
+  height: 60px;
+
+  padding-top: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+}
+.divSixParent{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 120px;
+}
+.text18,.text19{
+ text-align: left;
+ 
+}
+
+.signinBtn{
+  margin-left: 550px;
+  margin-top: 15px;
+
+}
+.top_jobs {
+  display: flex;                /* ✅ Add this to activate flexbox */
+  flex-direction: column;       /* ✅ Typo fixed (colum ❌ → column ✅) */
+  align-items: center;          /* ✅ To center all job boxes horizontally */
+  justify-content: center;
+      /* Optional, vertical centering if parent has height */
+  gap: 20px;                    /* ✅ Space between job boxes */
+  padding: 20px;                /* Optional: some inner padding */
+}
+.joball {
+  position: relative;             /* Required for absolute button placement */
+  width: 900px;
+  height: 65px;
+  border: 3px solid black;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;             /* Some left padding for job text */
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0 auto;                 /* Centering the box */
+}
+
+.applynowbtn {
+  position: absolute;
+  right: 10px;
+  margin-top: 50px;                    /* 👈 This places it 10px from the right */
+}
+.job_button2 {
+  margin-left: 160px;
+  margin-top: 12px;
+}
+
+.text19{
+  font-size: 16px;
+  font-weight: 500;
+   display: flex;
+  justify-content: center;
+  text-align: center;
+
+  margin-top: 20px;
+   width: 675px;
+  
+  
+margin-left: 370px;
+line-height: 1.2;
+}
+
+.planbtn {
+  margin-top: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.parent_div {
+  height: 550px;
+  border: 4px solid transparent;
+  border-radius: 25px;
+  background-clip: padding-box;
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  padding: 20px 15px;
+  background: white;
+  z-index: 1;
+margin: 0 auto 10px auto;  text-align: left;
+}
+.parent_div::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  right: -7px;
+  bottom: -7px;
+  border-radius: 29px;
+  background: linear-gradient(135deg, #38bd3b, #2e8b57, #a0e423);
+  z-index: -1;
+}
+.parent_div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  background: white;
+  z-index: -1;
+}
+.text18 {
+  font-size: 45px;
+  font-weight: bold; /* or "bold" — same effect */
+  max-width: 700px;
+  margin: 20px auto;  /* Center horizontally */
+  text-align: center;
+  line-height: 1.2;
+  color: black;
+}
+
+
+.text19 {
+  font-size: 17px;
+  font-weight: 500;
+  max-width: 675px;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 1.4;
+}
+
+
+
+.text20{
+  font-size: 24px;
+  font-weight: 700;
+}
+.text22{
+  font-weight: bold;
+}
+.text23{
+    font-weight: bold;
+}
+.starttoday{
+  margin-left: 60px;
+}
+.img_three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 45px;
+}
+.img_three img {
+  height: 175px;
+  width: auto;
+  display: block; /* 👈 KEY FIX: removes inline-space */
+  margin: 0;
+}
+.page-success .text13 {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  text-align: center;
+
+}
+.client-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  flex-wrap: wrap;
+    gap: 140px;
+    margin-top: 45px;
+}
+
+.client-logos img {
+  height: 125px;
+  object-fit: contain;
+  
+}
+
+.testimonial-section {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial-box {
+  width: 330px;
+  height: 150px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  background: white;
+  border: 7px solid transparent;  /* changed to transparent */
+  background-clip: padding-box;
+  z-index: 1;
+    position: relative;
+}
+
+.testimonial-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  padding: 7px; /* same as border thickness */
+ background: linear-gradient(135deg, #38bd3b, #2e8b57, #a0e423);  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+
+.user-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #000;
+  margin: 0 auto 15px auto;
+  border: 3px solid black;
+}
+
+.testimonial-text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.stars {
+  text-align: center;
+  font-size: 20px;
+  color: #ffc107;
+}
+
+/* Pagination Dots */
+.dots {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.dots span {
+  background: #38bd3b;
+  border-radius: 50%;
+}
+
+.small-dot {
+  width: 8px;
+  height: 8px;
+}
+.Vsmall-dot{
+  width: 5px;
+  height: 5px;
+
+}
+.Lsmall-dot{
+   width: 6px;
+  height: 6px;
+
+}
+.medium-dot {
+  width: 12px;
+  height: 12px;
+}
+
+.large-dot {
+  width: 18px;
+  height: 18px;
+}
+.circle-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #222;
+  border: 2px solid #aaa;
+
+  position: absolute;    /* make it overlap */
+  top: -20px;            /* half above the box */
+  left: -20px;           /* stick to left edge */
+}
+.red_flagImg_2{
+  margin-top: 300px;
+  margin-left: 80px;
+  padding-left: 50px;
+}
+.signinBtn2{
+margin: 0;}
+.arrowpic2{
+
+  margin: 0;
+ 
+  margin-left: 300px;
+  margin-bottom: -300px;
+  margin-top: 100px;
+}
+
+
+   
+    @media (max-width: 1200px) {
+      .line1, .line2, .line4 {
+        font-size: 3.2rem;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .line1, .line2, .line4 {
+        font-size: 2.8rem;
+      }
+      
+      .line3 {
+        font-size: 1.4rem;
+      }
+      
+      .line5 {
+        font-size: 1.1rem;
+      }
+      
+      .paragraph1 {
+        font-size: 1.2rem;
+      }
+    }
+
+
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 15px 10px;
+        margin: 20px 10px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-links li {
+        margin: 10px 0;
+      }
+
+      .hero-section {
+        padding: 20px 0;
+      }
+      
+      .line1, .line2, .line4 {
+        font-size: 2.5rem;
+        text-align: center;
+      }
+      
+      .line3 {
+        font-size: 1.3rem;
+        padding-left: 120px;
+      }
+      
+      .line5 {
+        font-size: 1.1rem;
+        text-align: center;
+        max-width: 100%;
+        margin: 25px auto 0;
+      }
+      
+      .button1 {
+        display: block;
+        margin: 30px auto 0;
+      }
+      
+      .growvy-img {
+        margin-top: 30px;
+        padding: 0 20px;
+      }
+      
+      .paragraph-section {
+        padding: 40px 0 20px;
+      }
+      
+      .paragraph1 {
+        font-size: 1.1rem;
+       margin-top: 100px;
+      }
+      
+      .paragraph1::before {
+        left: -5px;
+        top: -15px;
+        font-size: 3rem;
+      }
+    }
+    .jobSeekerimg{
+      padding: 0;
+      margin: 0;
+      margin-left: 8rem;
+      margin-top: 18rem;
+     
+    }
+
+  /* ===========================
+   Growvy Home Page Full Responsive Fix
+   =========================== */
+
+@media (max-width: 1200px) {
+  .line1, .line2, .line4 {
+    font-size: 3rem;
+  }
+
+  .line3 {
+    font-size: 1.4rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .line5 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .button1 {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .growvy-img img {
+    max-width: 95%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .paragraph1 {
+    font-size: 1.1rem;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 10px 20px;
+    margin: 20px auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hero-section {
+    text-align: center;
+  }
+
+  .line1, .line2, .line4 {
+    font-size: 2.5rem;
+  }
+
+  .line3 {
+    font-size: 1.2rem;
+  }
+
+  .line5 {
+    font-size: 1rem;
+  }
+
+  .paragraph-section {
+    padding: 30px 15px;
+  }
+
+  .paragraph1 {
+    font-size: 1rem;
+  }
+
+  .line6, .ecommerce_heading, .emp_heading, .buss_heading {
+    font-size: 2.2rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .line7, .ecom_content, .emp_content, .buss_content {
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .job_button, .e-com_button, .emp_button, .buss_button {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .jobSeekerimg img,
+  .ecom_img img,
+  .red_flagImg img,
+  .e_commImg img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+   
+  }
+
+  .text18 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .text19 {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 95%;
+    margin: 10px auto;
+  }
+
+  .ownerpic,
+  .scheduleCallpic {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .text3 {
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .text4 {
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .plan-button,
+  .scheduleCallButton {
+    display: block;
+    margin: 15px auto;
+  }
+
+  .text5, .text6, .text7 {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .icons {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .list {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .starsLine,
+  .greenarrow {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .line1, .line2, .line4 {
+    font-size: 2rem;
+  }
+
+  .line3 {
+    font-size: 1rem;
+  }
+
+  .line5 {
+    font-size: 0.9rem;
+  }
+
+  .button1 {
+    width: 160px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .text18 {
+    font-size: 1.5rem;
+  }
+
+  .text19 {
+    font-size: 0.9rem;
+  }
+
+  .text3 {
+    font-size: 1.5rem;
+  }
+
+  .text4 {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    padding: 10px;
+    margin: 15px auto;
+  }
+
+  .paragraph1 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .line1, .line2, .line4 {
+    font-size: 1.5rem;
+  }
+
+  .line3 {
+    font-size: 0.9rem;
+  }
+
+  .line5 {
+    font-size: 0.8rem;
+  }
+
+  .paragraph1 {
+    font-size: 0.8rem;
+  }
+
+  .text18 {
+    font-size: 1.2rem;
+  }
+
+  .text19 {
+    font-size: 0.8rem;
+  }
+
+  .button1,
+  .plan-button,
+  .scheduleCallButton,
+  .signinBtn {
+    width: 140px;
+    padding: 8px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 991px) {
+  .hero-section .hero-content {
+    text-align: center;
+  }
+  .hero-section .button1 {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section img {
+    max-width: 80%;
+    height: auto;
+  }
+  .paragraph-section .paragraph1 {
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section .line1,
+  .hero-section .line2,
+  .hero-section .line3,
+  .hero-section .line4 {
+    font-size: 24px; /* adjust based on your figma size */
+  }
+  .hero-section .line5 {
+    font-size: 14px;
+  }
+  .hero-section .button1 {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .paragraph-section .paragraph1 {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+}
+@media (max-width: 576px) {
+  /* Hero Section Center Alignment */
+  .hero-section .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    height: auto;
+  }
+  .hero-section .line1,
+  .hero-section .line2,
+  .hero-section .line3,
+  .hero-section .line4,
+  .hero-section .line5 {
+    text-align: center;
+  }
+  .hero-section .button1 {
+    display: block;
+    margin: 15px auto;
+  }
+
+  /* Paragraph Section Center Alignment */
+  .paragraph-section .paragraph1 {
+    text-align: center;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+@media (max-width: 576px) {
+  /* Hero Section */
+  .hero-section .row {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-section .hero-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+  }
+  .hero-section .button1 {
+    margin: 15px auto;
+  }
+
+  /* Paragraph Section */
+  .paragraph-section .paragraph1 {
+    text-align: center;
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+
+/* ======== Growvy Mobile & Tablet Responsiveness Layer ======== */
+
+/* Small tablets (max-width: 767px) */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 8px 0;
+  }
+
+  .hero-section .row {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-section .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .line1, .line2, .line4 {
+    font-size: 2rem;
+  }
+
+  .line3 {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+
+  .line5 {
+    font-size: 0.9rem;
+    max-width: 95%;
+  }
+
+  .button1 {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 150px;
+  }
+
+  .growvy-img img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .paragraph-section {
+    padding: 30px 15px;
+  }
+
+  .paragraph1 {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .line6, .ecommerce_heading, .emp_heading, .buss_heading {
+    font-size: 1.8rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .line7, .ecom_content, .emp_content, .buss_content {
+    font-size: 0.9rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .job_button, .e-com_button, .emp_button, .buss_button {
+    display: block;
+    margin: 15px auto;
+    width: 160px;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .jobSeekerimg img,
+  .ecom_img img,
+  .red_flagImg img,
+  .e_commImg img {
+    max-width: 80%;
+    display: block;
+  }
+ 
+
+  .text18 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .text19 {
+    font-size: 0.9rem;
+    text-align: center;
+    max-width: 95%;
+    margin: 10px auto;
+  }
+
+  .ownerpic, .scheduleCallpic {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .text3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .text4 {
+    font-size: 0.9rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .plan-button, .scheduleCallButton, .signinBtn {
+    display: block;
+    margin: 15px auto;
+    width: 160px;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .text5, .text6, .text7 {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .icons {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .list {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .starsLine, .greenarrow {
+    display: block;
+    margin: 20px auto;
+    max-width: 70%;
+    height: auto;
+  }
+
+  .testimonial-box {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .text14, .text16 {
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 20px auto 10px;
+    text-align: center;
+  }
+
+  .text15, .text17 {
+    font-size: 0.9rem;
+    width: 90%;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+
+  .divSixParent {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .divSix {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+
+/* Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .line1, .line2, .line4 {
+    font-size: 1.4rem;
+  }
+
+  .line3 {
+    font-size: 0.8rem;
+  }
+
+  .line5 {
+    font-size: 0.8rem;
+  }
+
+  .button1,
+  .plan-button,
+  .scheduleCallButton,
+  .signinBtn {
+    width: 140px;
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .paragraph1 {
+    font-size: 0.8rem;
+    padding: 0 8px;
+  }
+
+  .text18 {
+    font-size: 1.2rem;
+  }
+
+  .text19 {
+    font-size: 0.8rem;
+  }
+
+  .text3 {
+    font-size: 1.2rem;
+  }
+
+  .text4 {
+    font-size: 0.8rem;
+  }
+}
+.line6{
+  padding-top: 20rem;
+}
+.e_commImg{
+  padding-top: 12rem;
+}
+@media (max-width: 1200px) {
+  .custom-navbar {
+    padding: 20px 100px;
+    margin: 30px 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-navbar {
+    padding: 15px 30px;
+    margin: 20px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-navbar {
+    padding: 10px 20px;
+    margin: 15px;
+    border-radius: 12px;
+  }
+}
+/* Responsive adjustments like navbar */
+@media (max-width: 1200px) {
+  .hero-section {
+    padding: 40px 100px;
+  }
+  .line5{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    padding-top: 1rem;
+  }
+  .button1{
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .line3{
+    padding: 0;
+    margin: 0;
+    padding-right: 200px;
+  }
+  .jobSeekerimg ,.ecom_img ,.red_flagImg,.e_commImg {
+    display: none;
+  }
+.forrespnsive2{
+padding-left: 10rem;}
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 30px 50px;
+  }
+    .line5{
+    padding: 0;
+    margin: 0;
+  padding-left: 14rem;
+  padding-top: 1rem;
+  }
+  .button1{
+    margin-left: 240px;
+  }
+  .line3{
+    padding: 0;
+    margin: 0;
+
+  }
+   .hero-img{
+    width: 250px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    padding-right: 2rem;
+  }
+  .paragraph-section {
+    padding: 20px 50px;
+    padding-bottom: 40px;
+  }
+.jobSeekerimg ,.ecom_img ,.red_flagImg,.e_commImg {
+    display: none;
+  }
+  .line6{
+  padding-top: 3rem;
+}
+
+
+ .jobSeekerimg ,.ecom_img ,.red_flagImg,.e_commImg {
+    display: none;
+  }
+
+  .emp_heading ,.buss_heading ,.ecommerce_heading {
+    padding: 0;
+    margin: 0;
+    padding-top: 2rem;
+  }
+.forresponsive {
+margin-left: 200px;
+}}
+
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 20px 20px;
+
+  }
+   .line5{
+    padding: 0;
+    margin: 0;
+    
+  }
+  .button1{
+    margin: 0;
+    margin-right: 50px;
+  }
+  .paragraph-section {
+    padding: 15px 40px;
+    padding-bottom: 0;
+   
+  }
+  .line6, .ecommerce_heading, .emp_heading, .buss_heading, .text3 {
+    font-size: 1.2rem; /* Adjust only if overflow occurs */
+  }
+  .line7, .ecom_content, .emp_content, .buss_content, .text4, .text19 {
+    font-size: 1rem;
+  }
+  .job_button, .e-com_button, .emp_button, .buss_button, .plan-button, .signinBtn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+.line6{
+  padding-top: 3rem;
+}
+
+
+ .jobSeekerimg ,.ecom_img ,.red_flagImg,.e_commImg {
+    display: none;
+  }
+
+  .emp_heading ,.buss_heading ,.ecommerce_heading {
+    padding: 0;
+    margin: 0;
+    padding-top: 2rem;
+  }
+.forresponsive {
+margin: 0; 
+padding: 0; 
+}
+.footer-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-growvy,
+  .footer-list,
+  .footer-arrow {
+    width: 100% !important;
+    margin-bottom: 1.2rem;
+  }
+
+  .icons {
+    margin-top: 0.8rem;
+     margin-left: 210px;
+  }
+
+  .icons img {
+ margin: 0;
+
+    width: 50px;
+    height: auto;
+  }
+.list{
+ padding: 0;
+margin-top: 20px;
+list-style: none;}
+  .starsLine {
+ display: none;
+  }
+
+  .greenarrow {
+    max-width: 100px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    margin-left: 200px;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 15px 15px;
+  }
+   .line5{
+    padding: 0;
+    margin: 0;
+  }
+  .line3{
+    padding: 0;
+    margin: 0;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+  }
+  .hero-img{
+    width: 150px;
+    height: auto;
+  }
+  .paragraph-section {
+    padding: 30px px;
+    text-align: left;
+ 
+  
+  }
+    .text18 {
+    font-size: 1.1rem;
+  }
+  .jobSeekerimg ,.ecom_img ,.red_flagImg,.e_commImg {
+    display: none;
+  }
+  .emp_heading ,.buss_heading ,.ecommerce_heading {
+    padding: 0;
+    margin: 0;
+    padding-top: 2rem;
+  }
+  
+  }
+/* ✅ Default large screen layout: no changes needed */
+
+@media (max-width: 992px) {
+  .footer-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* center all text and icons */
+  }
+
+  .footer-growvy,
+  .footer-list,
+  .footer-arrow {
+    width: 100% !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .icons {
+    margin-top: 1rem;
+  }
+
+  .icons img {
+    margin: 0 8px;
+  }
+
+  .starsLine {
+    margin-top: 1rem;
+    max-width: 200px; /* prevent overflow */
+  }
+
+  .greenarrow {
+    max-width: 100px; /* keep arrow reasonable on small screens */
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  .footer-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-growvy,
+  .footer-list,
+  .footer-arrow {
+    width: 100% !important;
+    margin-bottom: 1.2rem;
+  }
+
+  .icons {
+    margin-top: 0.8rem;
+     margin-left: 175px;
+  }
+
+  .icons img {
+ margin: 0;
+
+    width: 40px;
+    height: auto;
+  }
+
+  .starsLine {
+    margin: o;
+    margin-top: 0.8rem;
+    max-width: 300px;
+    height: auto;
+    margin-right: 200px;
+  }
+
+  .greenarrow {
+    width: 80px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-left: 170px ;
+  }
+}
+
+/* jobs page */
+/* ========== Service Section Responsive ========== */
+
+/* 1200px and below (optional; tweak if needed) */
+@media (max-width: 1200px) {
+  .service_div {
+    padding: 40px 20px;
+  }
+  .text8 {
+    font-size: 60px;
+  }
+  .text9 {
+    font-size: 18px;
+    max-width: 90%;
+  }
+}
+
+/* 992px and below (optional; tweak if needed) */
+@media (max-width: 992px) {
+  .service_div {
+    padding: 35px 15px;
+     height: 300px;  
+  }
+  .text8 {
+    font-size: 50px;
+  }
+  .text9 {
+    font-size: 17px;
+    max-width: 85%;
+  }
+}
+
+/* 768px and below (replaces your 576px rule for this section) */
+@media (max-width: 768px) {
+  .service_div {
+    height: 300px;           /* let it grow with content */
+    padding: 30px 10px;     /* tighter padding on tablets/small screens */
+    border-bottom-left-radius: 40% 15%;
+    border-bottom-right-radius: 40% 15%;
+  }
+  .text8 {
+    font-size: 36px;        /* scale down heading */
+    line-height: 1.2;       /* avoid overflow */
+  }
+  .text9 {
+    font-size: 15px;        /* scale down sub-heading */
+    max-width: 100%;
+    margin: 8px auto 0;
+    padding: 0 10px;        /* give breathing room */
+  }
+}
+@media (max-width: 576px) {
+  .service_div {
+    height: 300px;
+    padding: 20px 8px;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+  }
+  .text8 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  .text9 {
+    font-size: 13px;
+  }
+  
+}
+
+
+@media (max-width: 1200px) {
+  .divSix {
+    border-radius: 40px;
+    padding: 15px 0;
+    font-size: 22px;
+  }
+ .signinBtn{
+    display: block;
+    margin: 0 auto;
+  }
+ 
+}
+
+/* LG: below 992px */
+@media (max-width: 992px) {
+  .divSix {
+    border-radius: 30px;
+    padding: 12px 0;
+    font-size: 20px;
+  }
+    .signinBtn{
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* MD: below 768px */
+@media (max-width: 768px) {
+  .divSix {
+    flex: 1 1 45%; /* two in a row */
+    border-radius: 25px;
+    margin-left: 59px;
+    font-size: 18px;
+  }
+ 
+}
+
+/* SM: below 576px */
+@media (max-width: 576px) {
+  .divSix {
+    flex: 1 1 100%; /* stack vertically */
+    border-radius: 20px;
+    font-size: 16px;
+    margin-left: 50px;
+  }
+  
+}
+@media (max-width: 1200px) {
+    .joball {
+
+      width: 1000px;
+       
+    }
+ 
+}
+
+/* 992px: 2 columns */
+@media (max-width: 992px) {
+     .joball {
+       
+        width: 700px;
+        font-size: 20px;
+    }
+    .applynowbtn {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+        padding: 0;
+
+    }
+}
+
+/* 768px: 2 columns, tighter fit */
+@media (max-width: 768px) {
+    .joball {
+       
+        width: 500px;
+        font-size: 13px;
+    }
+    .applynowbtn {
+        width: 100px;
+        height: 40px;
+        font-size: 8px;
+      border-radius: 18px;
+
+    }
+}
+
+/* 576px: 1 column */
+@media (max-width: 576px) {
+    .joball {
+       
+        width: 300px!important;
+        font-size: 13px;
+    }
+    .applynowbtn {
+        width: 60px;
+        height: 30px;
+        font-size: 8px;
+        padding: 0;
+
+    }
+}
+/* ---------- 992px ---------- */
+@media (max-width: 992px) {
+    .div2 {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+    }
+
+    .div2 .text13 {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+        margin-bottom: 15px;
+    }
+}
+
+/* ---------- 768px ---------- */
+@media (max-width: 768px) {
+    .logo-img {
+        width: 120px;
+        margin: 10px;
+    }
+}
+
+/* ---------- 576px ---------- */
+@media (max-width: 576px) {
+    .logo-img {
+        width: 100px;
+        margin: 8px;
+        
+    }
+  
+    .div2 {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .div2 .text13 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .PricingBtn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 1200px) {
+    .logo-img {
+        width: 140px;
+        margin: 12px;
+    }
+
+    .text13 {
+        font-size: 1.5rem;
+    }
+
+    .PricingBtn {
+        padding: 10px 24px;
+    }
+}
+
+
+/* 1200px (xl) */
+@media (max-width: 1200px) {
+    .testimonial-box {
+        width: 220px;
+    }
+}
+
+/* 992px (lg) */
+@media (max-width: 992px) {
+    .testimonial-box {
+        width: 400px;
+        height: 110px;
+        margin-top: 20px;
+    }
+    .circle-icon i {
+        font-size: 35px;
+    }
+    .testimonial-text {
+        font-size: 15px;
+    }
+    .stars {
+        font-size: 17px;
+    }
+}
+
+/* 768px (md) */
+@media (max-width: 768px) {
+    .testimonial-section {
+        justify-content: center;
+        gap: 15px;
+    }
+    .testimonial-box {
+        width: 500px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    .circle-icon i {
+        font-size: 32px;
+    }
+    .testimonial-text {
+        font-size: 14px;
+    }
+    .stars {
+        font-size: 16px;
+    }
+}
+
+/* 576px (sm) */
+@media (max-width: 576px) {
+    .testimonial-section {
+        justify-content: center;
+        gap: 10px;
+    }
+    .testimonial-box {
+        width: 400px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .circle-icon i {
+        font-size: 28px;
+    }
+    .testimonial-text {
+        font-size: 13px;
+    }
+    .stars {
+        font-size: 15px;
+    }
+  
+}
+
+
+/* 1200px */
+@media (max-width: 1200px) {
+    .text6 {
+        font-size: 22px;
+    }
+    .text7 {
+        font-size: 15px;
+    }
+    .list {
+        font-size: 15px;
+    }
+    .icons img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* 992px */
+@media (max-width: 992px) {
+    .text6 {
+        font-size: 20px;
+    }
+    .text7 {
+        font-size: 14px;
+    }
+    .list {
+        font-size: 14px;
+    }
+    .icons img {
+        width: 26px;
+        height: 26px;
+    }
+    .greenarrow {
+        width: 80%;
+    }
+}
+
+/* 768px */
+
+
+
+@media (max-width: 768px) {
+    .text6 {
+        font-size: 20px;
+    }
+    .text7 {
+        font-size: 14px;
+    }
+    .list {
+        font-size: 14px;
+    }
+    .icons img {
+        width: 26px;
+        height: 26px;
+    }
+    .greenarrow {
+        width: 80%;
+    }
+}
+/* ---------- 1200px ---------- */
+@media (max-width: 1200px) {
+    .overlapdiv img,
+    .imageres img,
+    .business-img img,
+    .scheduleCallpic {
+        max-height: 320px;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .parentDiv {
+        max-width: 45%;
+    }
+    .scheduleCallButton {
+        width: 80%;
+    }
+}
+@media (max-width: 992px) {
+  .overlapdiv {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .div1 {
+        padding: 10px;
+    }
+    .text11 {
+        font-size: 18px;
+    }
+    .text12 {
+        font-size: 14px;
+    }
+    .planBtn {
+        width: 60%;
+        font-size: 14px;
+    }
+    .overlapImg {
+        max-width: 100px;
+        height: auto;
+    }
+     .text10{
+      display: none;
+    }
+}
+
+/* 768px tak 1 column */
+@media (max-width: 768px) {
+   .overlapdiv {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .div1 {
+        padding: 10px;
+    }
+    .text11 {
+        font-size: 18px;
+    }
+    .text12 {
+        font-size: 14px;
+    }
+    .planBtn {
+        width: 60%;
+        font-size: 14px;
+    }
+    .overlapImg {
+        max-width: 100px;
+        height: auto;
+    }
+     .text10{
+      display: none;
+    }
+}
+
+/* 576px tak padding / size adjust, overflow fix */
+@media (max-width: 576px) {
+    .overlapdiv {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .div1 {
+        padding: 10px;
+    }
+    .text11 {
+        font-size: 18px;
+    }
+    .text12 {
+        font-size: 14px;
+    }
+    .planBtn {
+        width: 100px;
+        font-size: 14px;
+    }
+    .overlapImg {
+        max-width: 100px;
+        height: auto;
+    }
+     .text10{
+      display: none;
+    }
+}
+
+
+/* ---------- 992px ---------- */
+@media (max-width: 992px) {
+    .d-flex.justify-content-center {
+        flex-direction: column;
+        align-items: center;
+        text-align: center !important;
+    }
+    .parentDiv {
+        max-width: 90%;
+        padding: 0 15px;
+        text-align: center !important;
+    }
+    .overlapdiv img,
+    .imageres img,
+    .business-img img,
+    .scheduleCallpic {
+        max-height: 280px;
+        margin-bottom: 15px;
+    }
+  .scheduleCallButton {
+    width:170px;
+    height: 40px;
+  }}
+
+
+/* ---------- 768px ---------- */
+@media (max-width: 768px) {
+    .overlapdiv img,
+    .imageres img,
+    .business-img img,
+    .scheduleCallpic {
+        max-height: 220px;
+    }
+    .planBtn,
+    .startbtn,
+    .PricingBtn {
+        width: 80%;
+        font-size: 14px;
+    }
+    .text13,
+    .text14,
+    .text15,
+    .text16,
+    .text17 {
+        padding: 0 10px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-top: 18px;
+    }
+     .hiringImg,.imageres,.business-img,.grow{
+      display: none;
+    }
+    .startbtn{
+      width: 100px;
+      height: 25px;
+      padding: 0;
+      margin-left: 40px;
+    }
+  .scheduleCallButton {
+    width:170px;
+    height: 40px;
+  }
+}
+
+/* ---------- 576px ---------- */
+@media (max-width: 576px) {
+    .overlapdiv img,
+    .imageres img,
+    .business-img img,
+    .scheduleCallpic {
+        max-height: 180px;
+    }
+    
+   .scheduleCallButton {
+    width:170px;
+    height: 40px;
+  }
+   .startbtn{
+      width: 100px;
+      height: 25px;
+      padding: 0;
+      margin-left: 40px;
+    }
+   .planBtn,.PricingBtn{
+    width: 130px;
+    margin-top: 60px;
+   }
+   
+    
+    .text13,
+    .text14,
+    .text15,
+    .text16,
+    .text17 {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+    .parentDiv {
+        padding: 0 10px;
+    }
+    .hiringImg,.imageres,.business-img,.grow{
+      display: none;
+    }
+.scheduleCallpic{
+padding: 0;
+padding-left: 20px
+;
+margin-left: 100px;}
+.starttoday{
+  margin: 0;
+  margin-left: 115px;
+  margin-top: 30px;
+}
+
+    }
+   
